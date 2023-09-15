@@ -13,7 +13,7 @@ const Navigation = () => {
 
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="custom-navbar">
-      <Navbar.Brand href="#home">My Resume</Navbar.Brand>
+      <Navbar.Brand href="/">My Resume</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu} />
       <Navbar.Collapse id="basic-navbar-nav" in={isOpen}>
         <Nav className="ml-auto">
