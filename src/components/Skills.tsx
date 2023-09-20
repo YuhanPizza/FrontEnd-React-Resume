@@ -1,35 +1,72 @@
 import React from 'react';
 
 const Skills = () => {
+  const cardStyle = {
+    width: '500px', // Set a fixed width for all cards
+    height: '100%', // Make the height 100% to ensure equal height
+  };
+  const cardBodyStyle = {
+    flex: '1', // Make the card body grow to fill the available space
+    overflow: 'hidden', // Hide content overflow
+    whiteSpace: 'nowrap', // Prevent text from wrapping
+  };
   return (
     <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
-      <h1>Skills</h1>
 
-      <div className="card" style={{ width: '700px' }}>
+      <div className="card" style={cardStyle}>
         <div className="row no-gutters">
-          <div className="col-md-4">
-            <img src="image1.jpg" className="card-img" alt="Sample Image 1" />
-          </div>
-          <div className="col-md-8">
-            <div className="card-body">
-              <h5 className="card-title">Title 1</h5>
-              <p className="card-text">Description 1</p>
-              <p className="card-text">Date: September 1, 2023</p>
+        <div className="d-flex flex-column">
+        <div className="card-body" style={cardBodyStyle}>
+              <h5 className="card-title">Technologies Stack</h5>
+              <p className="card-text">
+                <ul><li>Express JS, React JS, Node JS</li>
+                  <li>Code Debugging</li>
+                  <li>Design and Development</li>
+                  <li>Git (Github, Gitlab)</li>
+                  <li>PL/SQL</li>
+                  <li>JavaScript, Python, C++, Java</li>
+                  <li>Mobile Application Development</li>
+                  <li>HTML, XML and CSS</li></ul></p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="card" style={{ width: '700px' }}>
+      <div className="card" style={cardStyle}>
         <div className="row no-gutters">
-          <div className="col-md-4">
-            <img src="image2.jpg" className="card-img" alt="Sample Image 2" />
+        <div className="d-flex flex-column">
+        <div className="card-body" style={cardBodyStyle}>
+              <h5 className="card-title">Software Tools</h5>
+              <p className="card-text">                <ul><li>Microsoft Office Suite
+              </li>
+                <li>Google Workspace</li>
+                <li>Microsoft OneDrive</li>
+                <li>Google Drive</li>
+                <li>Microsoft Teams</li>
+                <li>Microsoft SharePoint</li>
+                <li>Visual Studio Code
+                </li>
+                <li>Visual Paradigm</li></ul></p>
+            </div>
           </div>
-          <div className="col-md-8">
-            <div className="card-body">
-              <h5 className="card-title">Title 2</h5>
-              <p className="card-text">Description 2</p>
-              <p className="card-text">Date: September 15, 2023</p>
+        </div>
+      </div>
+
+      <div className="card" style={cardStyle}>
+        <div className="row no-gutters">
+        <div className="d-flex flex-column">
+        <div className="card-body" style={cardBodyStyle}>
+              <h5 className="card-title">Relevant Skills</h5>
+              <p className="card-text">
+                <ul><li>Typing</li>
+                  <li>Computer Skills</li>
+                  <li>Organizational Skills
+                  </li>
+                  <li>Self-Management</li>
+                  <li>Attention to Detail</li>
+                  <li>Remote Collaboration</li>
+                  <li>Multitasking</li>
+                  <li>Communication</li></ul></p>
             </div>
           </div>
         </div>
