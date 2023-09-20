@@ -1,4 +1,3 @@
-import React from "react";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import Education from "./Education";

@@ -1,11 +1,11 @@
-import React from 'react';
+
 
 const Skills = () => {
   const cardStyle = {
     width: '500px', // Set a fixed width for all cards
     height: '100%', // Make the height 100% to ensure equal height
   };
-  const cardBodyStyle = {
+  const cardBodyStyle:React.CSSProperties = {
     flex: '1', // Make the card body grow to fill the available space
     overflow: 'hidden', // Hide content overflow
     whiteSpace: 'nowrap', // Prevent text from wrapping
