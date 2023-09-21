@@ -9,3 +9,13 @@
   body {
     background-color: grey;
   }
+ .card-black{
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    width: 700px;
+    margin: 70px auto 20px; /*Add margin to the top, and keep margin auto for centering*/ 
+    position: absolute; /* Position the card absolutely*/
+    left: 0;
+    right: 0;
+ }

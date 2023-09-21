@@ -9,16 +9,6 @@ const AboutMe = () => {
   const headerStyle = {
     marginTop: "20px",
   };
-  const cardStyle: React.CSSProperties = {
-    backgroundColor: "rgba(0, 0, 0, 0.75)",
-    borderRadius: "10px",
-    padding: "20px",
-    width: "700px",
-    margin: "70px auto 20px", // Add margin to the top, and keep margin auto for centering
-    position: "absolute", // Position the card absolutely
-    left: 0,
-    right: 0,
-  };
   const techStyle: React.CSSProperties = {
     backgroundColor: "rgba(255, 255, 255)",
     borderRadius: "10px",
@@ -31,7 +21,7 @@ const AboutMe = () => {
   };
   return (
       <div className="container">
-        <div className="card" style={cardStyle}>
+        <div className="card-black">
           <div className="card-body">
             <section id="aboutMe" style={containerStyle}>
               <div style={headerStyle}>

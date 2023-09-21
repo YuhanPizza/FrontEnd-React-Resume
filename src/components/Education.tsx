@@ -2,6 +2,8 @@ import React from 'react';
 
 const Education = () => {
   const cardStyle: React.CSSProperties = {
+    backgroundColor:'rgba(0,0,0,0.75)',
+    color: 'white',
     width: '1000px', // Set the card's width
     padding: '20px', // Add padding for spacing
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)', // Add a shadow for a card-like effect

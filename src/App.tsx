@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Navigation from './Navigation';
 import Home from './components/Home';
+import './Navigation.css';
 
 const App = () =>{
   return (

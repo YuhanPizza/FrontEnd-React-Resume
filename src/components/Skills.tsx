@@ -2,6 +2,8 @@
 
 const Skills = () => {
   const cardStyle = {
+    backgroundColor:'rgba(0,0,0,0.75)',
+    color: 'white',
     width: '500px', // Set a fixed width for all cards
     height: '100%', // Make the height 100% to ensure equal height
   };
