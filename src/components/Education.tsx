@@ -23,10 +23,12 @@ const Education = () => {
   // Function to handle hover effect
   const handleImageHover = (event:React.MouseEvent<HTMLImageElement>)=> {
     event.currentTarget.style.transform = 'scale(2)'; // Increase the image size by 10% on hover
+    event.currentTarget.style.zIndex= '1';
   };
    // Function to handle hover out effect
    const handleImageHoverOut = (event: React.MouseEvent<HTMLImageElement>) => {
     event.currentTarget.style.transform = 'scale(1)'; // Restore the original image size on hover out
+    event.currentTarget.style.zIndex= '0';
   };
 
   return (
