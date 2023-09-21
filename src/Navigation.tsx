@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav} from 'react-bootstrap';
 import { FaHome, FaUser, FaWrench, FaGraduationCap, FaProjectDiagram } from 'react-icons/fa';
   // Importing custom CSS
 
@@ -21,12 +21,7 @@ const Navigation = () => {
           <Nav.Link as={Link} to="/about"><FaUser /> About</Nav.Link>
           <Nav.Link as={Link} to="/skills"><FaWrench /> Skills</Nav.Link>
           <Nav.Link as={Link} to="/education"><FaGraduationCap /> Education</Nav.Link>
-          <NavDropdown title={<span><FaProjectDiagram /> Projects</span>} id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="/project1">Project 1</NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/project2">Project 2</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item as={Link} to="/all-projects">All Projects</NavDropdown.Item>
-          </NavDropdown>
+          <Nav.Link as={Link} to="/projects"><FaProjectDiagram/>Projects</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

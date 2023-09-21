@@ -4,7 +4,7 @@ type Project = {
   name: string;
   link: string;
   thumbnails: string[]; // Change to an array of images
-  sample: string; //leads to a working project
+  sample?: string; //leads to a working project
   about?: string;
 };
 
@@ -40,8 +40,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   };
 
   return (
-    <div
-      className="project-card"
+    <a href={project.sample} target="_blank" rel="noopener noreferrer">
+    <div className="project-card"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -53,6 +53,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <p>{project.about}</p>
       </div>
     </div>
+    </a>
   );
 };
 
