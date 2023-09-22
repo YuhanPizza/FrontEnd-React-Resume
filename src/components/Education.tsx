@@ -46,21 +46,21 @@ const Education = () => {
         {/* Flex container for images */}
         <div style={imageContainerStyle}>
           <img
-            src="src/assets/Honors Fall.jpeg"
+            src="Honors Fall.jpeg"
             alt="Honors 1"
             style={imageStyle}
             onMouseEnter={handleImageHover} // Add hover effect on mouse enter
             onMouseLeave={handleImageHoverOut} // Restore original size on mouse leave
           />
           <img
-            src="src/assets/Honors Summer.jpeg"
+            src="Honors Summer.jpeg"
             alt="Honors 2"
             style={imageStyle}
             onMouseEnter={handleImageHover} // Add hover effect on mouse enter
             onMouseLeave={handleImageHoverOut} // Restore original size on mouse leave
           />
           <img
-            src="src/assets/Winter Honors.JPG"
+            src="Winter Honors.JPG"
             alt="Honors 3"
             style={imageStyle}
             onMouseEnter={handleImageHover} // Add hover effect on mouse enter

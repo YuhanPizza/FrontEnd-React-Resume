@@ -26,7 +26,7 @@ const AboutMe = () => {
             <section id="aboutMe" style={containerStyle}>
               <div style={headerStyle}>
                 <a href="lorenz">
-                  <img src="../assets/lorenz.jpg" alt="Lorenz" width={300} />
+                  <img src="lorenz.jpg" alt="Lorenz" width={300} />
                 </a>
                 <h1>About Me</h1>
                 <p>I'm a full-stack software developer that just recently graduated with honors from Seneca College, ready to embark on my digital journey one step at a time. All coding projects are coded by me from the ground up for school workshops, school projects, personal projects, tutorials, and code reviews, from ideation and planning, all the way to finalizing the project with my own personal touches. Welcome, and let's start this journey together!</p>
