@@ -9,13 +9,13 @@ const Home = () => {
     <div style={{ marginTop: '20px' }}>
       <AboutMe />
     </div>
-    <div style={{ marginTop: '850px' }}>
+    <div style={{ marginTop: '800px' }}>
       <Skills />
     </div>
     <div style={{ marginTop: '-300px' }}>
       <Education />
     </div>
-    <div style={{ marginBottom: '20px' }}>
+    <div style={{ marginTop: '-50px' }}>
       <Projects />
     </div>
   </div>
