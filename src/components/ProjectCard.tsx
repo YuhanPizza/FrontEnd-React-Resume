@@ -51,7 +51,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </a>
       <div className="content">
         <h2>{project.name}</h2>
-        <h4>Check the Repo: <a href={project.link} target="_blank" rel="noopener noreferrer">Here</a></h4>
+        <h4>
+          Check the Repo:{' '}
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className="repo-link">
+            Here
+          </a>
+        </h4>
         <p>{project.about}</p>
       </div>
     </div>
