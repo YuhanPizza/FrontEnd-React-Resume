@@ -27,17 +27,18 @@ body {
 .project-card {
   display: flex;
   align-items: center;
-  max-width: 800px;
+  max-width: 1000px;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   color: white;
   margin: 70px auto 20px;
-
+  padding: 20px;
 }
 
 .image {
   flex: 1;
   max-width: 300px;
+  margin-right: 30px;
   /* Set a maximum width for the image container */
 }
 

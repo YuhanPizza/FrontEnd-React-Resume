@@ -40,20 +40,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   };
 
   return (
-    <a href={project.sample} target="_blank" rel="noopener noreferrer">
     <div className="project-card"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+      <a href={project.sample} target="_blank" rel="noopener noreferrer">
       <div className="image">
         <img src={project.thumbnails[currentThumbnailIndex]} alt={project.name} />
       </div>
+      </a>
       <div className="content">
         <h2>{project.name}</h2>
+        <h4>Check the Repo: <a href={project.link} target="_blank" rel="noopener noreferrer">Here</a></h4>
         <p>{project.about}</p>
       </div>
     </div>
-    </a>
   );
 };
 

@@ -19,8 +19,8 @@ const projectList = [
 
 const Projects: React.FC = () => {
   return (
-    <div className="card-black">
-      <h1>Projects</h1>
+    <div>
+      <h1 style={{textAlign: 'center', color:'white', fontWeight: 'bold'}}>Projects</h1>
       <div>
         {projectList.map((project, index) => (
           <ProjectCard key={index} project={project} />
