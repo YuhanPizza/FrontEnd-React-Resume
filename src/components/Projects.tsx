@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import { useTheme } from '../ThemeContext';
 
 const projectList = [
   { 
@@ -19,7 +20,17 @@ const projectList = [
 ];
 
 const Projects: React.FC = () => {
+  const {isDarkMode} = useTheme();
+  const bodyStyle = {
+    backgroundColor: isDarkMode ? 'darkolivegreen' : '#333', // Change colors as needed
+  };
   return (
+    <div>
+    <style>
+      {`body{
+        background-color:${bodyStyle.backgroundColor}
+      }`}
+    </style>
     <div>
       <h1 style={{textAlign: 'center', color:'white', fontWeight: 'bold'}}>Projects</h1>
       <div>
@@ -27,6 +38,7 @@ const Projects: React.FC = () => {
           <ProjectCard key={index} project={project} />
         ))}
       </div>
+    </div>
     </div>
   );
 };
