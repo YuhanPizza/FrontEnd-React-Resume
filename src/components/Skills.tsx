@@ -1,6 +1,10 @@
-
+import { useTheme } from '../ThemeContext';
 
 const Skills = () => {
+  const {isDarkMode} = useTheme();
+  const bodyStyle = {
+    backgroundColor: isDarkMode ? 'darkolivegreen' : '#333', // Change colors as needed
+  };
   const cardStyle = {
     backgroundColor:'rgba(0,0,0,0.75)',
     color: 'white',
@@ -13,6 +17,12 @@ const Skills = () => {
     whiteSpace: 'nowrap', // Prevent text from wrapping
   };
   return (
+    <div>
+      <style>
+        {`body{
+          background-color:${bodyStyle.backgroundColor}
+        }`}
+      </style>
     <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
 
       <div className="card" style={cardStyle}>
@@ -73,6 +83,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

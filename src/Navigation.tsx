@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav} from 'react-bootstrap';
 import { FaHome, FaUser, FaWrench, FaGraduationCap, FaProjectDiagram } from 'react-icons/fa';
+import { FiSun, FiMoon } from 'react-icons/fi';
 import { useTheme } from './ThemeContext';
   // Importing custom CSS
 
@@ -31,7 +32,14 @@ const Navigation = () => {
           <Nav.Link as={Link} to="/projects"><FaProjectDiagram/>Projects</Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      <Nav.Link onClick={toggleTheme}>Toggle Mode</Nav.Link>
+      <div className="dark-mode-toggle">
+        <FiSun color={isDarkMode ? 'gray' : 'red'} />
+        <label className="switch">
+          <input type="checkbox" onChange={toggleTheme} checked={isDarkMode} />
+          <span className="slider round"></span>
+        </label>
+        <FiMoon color={isDarkMode ? 'yellow' : 'gray'} />
+      </div>
     </Navbar>
   );
 };

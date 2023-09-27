@@ -1,6 +1,11 @@
 import React from 'react';
+import { useTheme } from '../ThemeContext';
 
 const Education = () => {
+  const {isDarkMode} = useTheme();
+  const bodyStyle = {
+    backgroundColor: isDarkMode ? 'darkolivegreen' : '#333', // Change colors as needed
+  };
   const cardStyle: React.CSSProperties = {
     backgroundColor:'rgba(0,0,0,0.75)',
     color: 'white',
@@ -34,6 +39,12 @@ const Education = () => {
   };
 
   return (
+    <div>
+    <style>
+      {`body{
+        background-color:${bodyStyle.backgroundColor}
+      }`}
+    </style>
     <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
       <div className="card" style={cardStyle}>
         <h1 style={{textAlign:'center'}}><b>Education</b></h1>
@@ -68,6 +79,7 @@ const Education = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

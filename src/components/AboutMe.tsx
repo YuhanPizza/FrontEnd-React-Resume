@@ -1,6 +1,11 @@
 import React from 'react';
+import { useTheme } from '../ThemeContext';
 
 const AboutMe = () => {
+  const {isDarkMode} = useTheme();
+  const bodyStyle = {
+    backgroundColor: isDarkMode ? 'darkolivegreen' : '#333', // Change colors as needed
+  };
   const containerStyle: React.CSSProperties = {
     textAlign: "center",
     color: "white",
@@ -10,7 +15,7 @@ const AboutMe = () => {
     marginTop: "20px",
   };
   const techStyle: React.CSSProperties = {
-    backgroundColor: "rgba(255, 255, 255)",
+    backgroundColor: "white",
     borderRadius: "10px",
     padding: "20px",
     width: "700px",
@@ -20,6 +25,12 @@ const AboutMe = () => {
     right: 0,
   };
   return (
+    <div>
+      <style>
+        {`body{
+          background-color:${bodyStyle.backgroundColor}
+        }`}
+      </style>
       <div className="container">
         <div className="card-black">
           <div className="card-body">
@@ -47,7 +58,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      
+      </div>
   );
 };
 
