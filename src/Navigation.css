@@ -6,9 +6,6 @@
   z-index: 100;
 }
 
-body {
-  background-color: burlywood;
-}
 
 .card-black {
   background-color: rgba(0, 0, 0, 0.75);
@@ -56,4 +53,14 @@ body {
 a{
   text-decoration: none;
   color:red;
+}
+
+.dark-mode{
+  background-color:#333;
+  color: #fff;
+}
+
+.light-mode{
+  background-color: darkolivegreen;
+  color: black;
 }

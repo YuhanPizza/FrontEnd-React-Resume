@@ -8,9 +8,11 @@ import Projects from "./components/Projects";
 import Navigation from './Navigation';
 import Home from './components/Home';
 import './Navigation.css';
+import { ThemeProvider } from './ThemeContext';
 
 const App = () =>{
   return (
+    <ThemeProvider>
     <Router>
       <Navigation/>
       <Routes>
@@ -21,6 +23,7 @@ const App = () =>{
         <Route path="/projects" element={<Projects/>}/>
       </Routes>
     </Router>
+    </ThemeProvider>
   )
 }
 
