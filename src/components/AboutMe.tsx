@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from '../ThemeContext';
+import '../Navigation.css';
 
 const AboutMe = () => {
   const {isDarkMode} = useTheme();
@@ -10,6 +11,7 @@ const AboutMe = () => {
     textAlign: "center",
     color: "white",
     paddingTop: "50px",
+    filter: isDarkMode ? 'grayScale(0%)' : 'grayScale(100%)',
   };
   const headerStyle = {
     marginTop: "20px",

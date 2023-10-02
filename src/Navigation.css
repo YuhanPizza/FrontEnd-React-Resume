@@ -111,3 +111,7 @@ input:checked + .slider:before {
   background-color: darkolivegreen;
   color: black;
 }
+
+.black-and-white {
+  filter: grayscale(100%);
+}

@@ -10,6 +10,7 @@ type Project = {
 
 type ProjectCardProps = {
   project: Project;
+  imageClass:string;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {

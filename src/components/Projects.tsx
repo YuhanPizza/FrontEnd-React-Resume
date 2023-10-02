@@ -21,6 +21,7 @@ const projectList = [
 
 const Projects: React.FC = () => {
   const {isDarkMode} = useTheme();
+  const imageClass = isDarkMode ? "black-and-white-image" : "";
   const bodyStyle = {
     backgroundColor: isDarkMode ? 'darkolivegreen' : '#333', // Change colors as needed
   };
@@ -35,7 +36,7 @@ const Projects: React.FC = () => {
       <h1 style={{textAlign: 'center', color:'white', fontWeight: 'bold'}}>Projects</h1>
       <div>
         {projectList.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <ProjectCard key={index} project={project} imageClass={imageClass}/>
         ))}
       </div>
     </div>

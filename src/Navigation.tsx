@@ -33,12 +33,12 @@ const Navigation = () => {
         </Nav>
       </Navbar.Collapse>
       <div className="dark-mode-toggle">
-        <FiSun color={isDarkMode ? 'gray' : 'red'} />
+        <FiMoon color={isDarkMode ? 'gray' : 'red'} />
         <label className="switch">
           <input type="checkbox" onChange={toggleTheme} checked={isDarkMode} />
           <span className="slider round"></span>
         </label>
-        <FiMoon color={isDarkMode ? 'yellow' : 'gray'} />
+        <FiSun color={isDarkMode ? 'yellow' : 'gray'} />
       </div>
     </Navbar>
   );
